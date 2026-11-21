@@ -20,9 +20,9 @@ botao.addEventListener ("click", function() {
         resultado.textContent = ` Olá ${nomeUsuario} seu IMC é de ${imc.toFixed(2)}`;
         
           if (emagrecer.checked){
-        resultado.textContent += 'Você escolheu emagrecer' ;   
+        resultado.textContent += ' Você escolheu emagrecer' ;   
     }else if (aumento.checked){
-        resultado.textContent += 'você escolheu aumnetar o peso';
+        resultado.textContent += ' você escolheu aumentar o peso';
     }
     }
     resultado.scrollIntoView({
