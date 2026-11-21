@@ -1,0 +1,196 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #050914, #0B1935);
+    color: white;
+}
+
+/* CAIXA EXTERNA */
+.container {
+    width: 850px;
+    max-width: 95%;
+    min-height: 90vh;
+    margin: 30px auto;
+    padding: 35px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+
+    border: 2px solid transparent;
+    border-radius: 20px;
+
+    background:
+        linear-gradient(#080F20, #080F20) padding-box,
+        linear-gradient(135deg, #1268D8, #00AAFF, #1268D8) border-box;
+
+    box-shadow: 0 0 20px #1268D833;
+}
+
+/* TÍTULO */
+header {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 28px;
+    font-weight: 650;
+    color: white;
+}
+
+h1 span {
+    color: #00AAFF;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.msg {
+    color: #A9B8D0;
+    font-family: 'Trebuchet MS', sans-serif;
+    margin-top: 12px;
+}
+
+/* CAIXA DOS CAMPOS */
+.painel-formulario {
+    width: 100%;
+    padding: 30px;
+    border: 1px solid #1268D8;
+    border-radius: 15px;
+
+    background: linear-gradient(135deg, #0B1935, #050914);
+}
+
+/* CAMPOS */
+.formulario {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.formulario label {
+    width: 75px;
+    flex-shrink: 0;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 650;
+    color: white;
+}
+
+.formulario input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #050914;
+    border: 1px solid #29466F;
+    color: white;
+}
+
+.formulario input:focus {
+    outline: none;
+    border-color: #00AAFF;
+}
+
+/* LINHA */
+.painel-formulario hr {
+    border: none;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(
+        to right,
+        transparent,
+        #29466F,
+        #00AAFF,
+        #29466F,
+        transparent
+    );
+    margin: 20px 0;
+}
+
+/* ALTERNATIVAS */
+.alt {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+    color: #A9B8D0;
+}
+
+.alt p {
+    color: white;
+    font-weight: 700;
+}
+
+.alt label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* BOTÃO */
+button {
+    display: block;
+    width: 270px;
+    max-width: 100%;
+    margin: 25px auto 0;
+    padding: 12px;
+
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(135deg, #1268D8, #00AAFF);
+    color: white;
+    cursor: pointer;
+}
+
+/* CAIXA DO RESULTADO */
+#resultado {
+    width: 100%;
+    min-height: 150px;
+    padding: 25px;
+
+    text-align: center;
+    color: white;
+
+    border: 2px solid transparent;
+    border-radius: 15px;
+
+    background:
+        linear-gradient(#080F20, #080F20) padding-box,
+        linear-gradient(135deg, #1268D8, #00AAFF, #1268D8) border-box;
+
+    box-shadow: 0 0 15px #1268D833;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px 12px;
+    }
+
+    .painel-formulario {
+        padding: 18px 12px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h1 span {
+        font-size: 27px;
+    }
+
+    .formulario label {
+        width: 65px;
+    }
+}

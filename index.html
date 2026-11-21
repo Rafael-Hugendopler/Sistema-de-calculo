@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Cálculo IMC</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="calculo.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Sistema de Cálculo IMC-ÍNDICE DE <br>
+                <span>MASSA CORPORAL</span>
+            </h1>
+
+            <p class="msg">Descubra seu IMC de forma rápida e simples</p>
+        </header>
+
+        <!-- Caixa dos campos e botão -->
+        <div class="painel-formulario">
+
+            <form>
+                <div class="formulario">
+                    <label for="nome">Nome:</label>
+                    <input type="text" placeholder="Digite seu nome" id="nome">
+                </div>
+
+                <div class="formulario">
+                    <label for="idade">Idade:</label>
+                    <input type="number" placeholder="Digite sua idade" id="idade">
+                </div>
+
+                <div class="formulario">
+                    <label for="altura">Altura:</label>
+                    <input type="number" placeholder="Digite sua altura" id="altura">
+                </div>
+
+                <div class="formulario">
+                    <label for="peso">Peso:</label>
+                    <input type="number" placeholder="Digite seu peso" id="peso">
+                </div>
+            </form>
+
+            <hr>
+
+            <div class="alt">
+                <p>Objetivo:</p>
+
+                <label>
+                    <input type="radio" name="opcao" value="1" id="emagrecer">
+                    Emagrecer
+                </label>
+
+                <label>
+                    <input type="radio" name="opcao" value="2" id="aumento">
+                    Ganhar peso
+                </label>
+            </div>
+
+            <button id="avaliar">Realizar avaliação</button>
+
+        </div>
+
+        <!-- Caixa do resultado -->
+        <div id="resultado"></div>
+
+    </div>
+
+</body>
+</html>
